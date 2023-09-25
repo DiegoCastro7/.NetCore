@@ -1,0 +1,252 @@
+Microsoft Windows [Versión 10.0.22621.2283]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas>mkdir practica01
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas>cd practica01
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet -h
+Uso: dotnet [runtime-options] [path-to-application] [arguments]
+
+Ejecute una aplicación de .NET.
+
+runtime-options:
+  --additionalprobingpath <path>   Ruta de acceso que contiene la directiva de sondeo y los ensamblados para los que realizar el sondeo.
+  --additional-deps <path>         Ruta de acceso al archivo deps.json adicional.
+  --depsfile                       Ruta de acceso al archivo <aplicación>.deps.json.
+  --fx-version <version>           Versión de la instancia de Shared Framework instalada que se usará para ejecutar la aplicación.
+  --roll-forward <setting>         Reenviar a la versión del marco (LatestPatch, Minor, LatestMinor, Major, LatestMajor, Disable).
+  --runtimeconfig                  Ruta de acceso al archivo <aplicación>.runtimeconfig.json.
+
+path-to-application:
+  La ruta de acceso al archivo .dll de una aplicación que se ejecutará.
+
+Uso: dotnet [sdk-options] [command] [command-options] [arguments]
+
+Ejecute un comando del SDK de .NET.
+
+sdk-options:
+  -d|--diagnostics  Habilita la salida de diagnóstico.
+  -h|--help         Muestra ayuda de la línea de comandos.
+  --info            Muestra la información de .NET.
+  --list-runtimes   Muestra los runtimes instalados.
+  --list-sdks       Muestra los SDK instalados.
+  --version         Muestra la versión del SDK de .NET en uso.
+
+Comandos de SDK:
+  add               Agrega un paquete o una referencia a un proyecto de .NET.
+  build             Compila un proyecto de .NET.
+  build-server      Interactúe con los servidores que inicia una compilación.
+  clean             Limpia los resultados de compilación de un proyecto .NET.
+  format            Aplicar preferencias de estilo a un proyecto o solución.
+  help              Muestra ayuda de la línea de comandos.
+  list              Enumera las referencias de proyecto de un proyecto de .NET.
+  msbuild           Ejecuta comandos de Microsoft Build Engine (MSBuild).
+  new               Crea un nuevo archivo o proyecto de .NET.
+  nuget             Proporciona comandos NuGet adicionales.
+  pack              Crea un paquete de NuGet.
+  publish           Publica un proyecto de .NET para implementación.
+  remove            Quita un paquete o una referencia de un proyecto de .NET.
+  restore           Restaura dependencias especificadas en un proyecto de .NET.
+  run               Compila y ejecuta la salida de un proyecto de .NET.
+  sdk               Administra la instalación del SDK de .NET.
+  sln               Modifica los archivos de la solución de Visual Studio.
+  store             Almacena los ensamblados especificados en el almacén del paquete de tiempo de ejecución.
+  test              Ejecuta pruebas unitarias usando el ejecutor de pruebas especificado en un proyecto de .NET.
+  tool              Instala o administra herramientas que mejoran la experiencia de .NET.
+  vstest            Ejecuta comandos de Microsoft Test Engine (VSTest).
+  workload          Administrar cargas de trabajo opcionales.
+
+Comandos adicionales para herramientas incluidas:
+  dev-certs         Crea y administra certificados de desarrollo.
+  fsi               Inicie F# interactivo o ejecute scripts de F#.
+  user-jwts         Administre los tokens web JSON en el desarrollo.
+  user-secrets      Administra secretos de usuario de desarrollo.
+  watch             Inicia un monitor de archivo que ejecuta un comando cuando los archivos cambian.
+
+Ejecute "dotnet [comando] --help" para más información sobre un comando.
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet new-h
+No se pudo ejecutar porque no se encontró el comando o el archivo especificado.
+Algunas de las posibles causas son :
+  * Escribió mal un comando dotnet integrado.
+  * Pretendía ejecutar un programa .NET, pero dotnet-new-h no existe.
+  * Pretendía ejecutar una herramienta global, pero no se encontró ningún ejecutable con prefijo dotnet con este nombre en PATH.
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet new -h
+Description:
+  Comandos de creación de instancias de la plantilla para CLI de .NET.
+
+Usage:
+  dotnet new [<template-short-name> [<template-args>...]] [options]
+  dotnet new [command] [options]
+
+Arguments:
+  <template-short-name>  Nombre corto de la plantilla que se va a crear.
+  <template-args>        Opciones específicas de la plantilla que se van a usar.
+
+Options:
+  -o, --output <output>    Ubicación en la que se colocará el resultado generado.
+  -n, --name <name>        Nombre de la salida que se va a crear. Si no se especifica ningún nombre, se usa el nombre del directorio de salida.
+  --dry-run                Muestra un resumen de lo que sucede si se ejecuta la línea de comandos dada si se crea una plantilla.
+  --force                  Fuerza la generación de contenido aunque cambie a los archivos existentes.
+  --no-update-check        Deshabilita la comprobación de las actualizaciones del paquete de plantillas al crear una plantilla de forma instantánea.
+  --project <project>      Proyecto que se debe usar para la evaluación de contexto.
+  -v, --verbosity <LEVEL>  Permite establecer el nivel de detalle. Los valores permitidos son q[uiet], m[inimal], n[ormal] y diag[nostic]. [default: normal]
+  -d, --diagnostics        Permite habilitar la salida de diagnóstico.
+  -?, -h, --help           Muestra ayuda de la línea de comandos.
+
+Commands:
+  create <template-short-name> <template-args>  Crea una instancia de una plantilla con el nombre corto especificado. Alias de "dotnet new <template name>".
+  install <package>                             Instala un paquete de plantillas.
+  uninstall <package>                           Desinstala un paquete de plantillas.
+  update                                        Comprueba si hay actualizaciones para los paquetes de plantillas instalados actualmente e instala las actualizaciones.
+  search <template-name>                        Busca las plantillas en NuGet.org.
+  list <template-name>                          Muestra las plantillas que contienen el nombre de plantilla especificado. Si no se especifica ningún nombre, muestra todas las plantillas.
+
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet new list
+Estas plantillas coinciden con su entrada:
+
+Nombre de la plantilla                                     Nombre corto         Idioma      Etiquetas
+---------------------------------------------------------  -------------------  ----------  --------------------------------
+Aplicación Blazor para WebAssembly                         blazorwasm           [C#]        Web/Blazor/WebAssembly/PWA
+Aplicación Blazor Server                                   blazorserver         [C#]        Web/Blazor
+Aplicación Blazor Server vacía                             blazorserver-empty   [C#]        Web/Blazor/Empty
+Aplicación Blazor WebAssembly vacía                        blazorwasm-empty     [C#]        Web/Blazor/WebAssembly/PWA/Empty
+Aplicación de consola                                      console              [C#],F#,VB  Common/Console
+Aplicación de Windows Forms                                winforms             [C#],VB     Common/WinForms
+Aplicación web de ASP.NET Core                             webapp,razor         [C#]        Web/MVC/Razor Pages
+Aplicación web de ASP.NET Core (Modelo-Vista-Controlador)  mvc                  [C#],F#     Web/MVC
+Aplicación WPF                                             wpf                  [C#],VB     Common/WPF
+Archivo de búfer de protocolo                              proto                            Web/gRPC
+Archivo de la solución                                     sln,solution                     Solution
+Archivo de manifiesto de la herramienta local de dotnet    tool-manifest                    Config
+Archivo Directory.Build.props de MSBuild                   buildprops                       MSBuild/props
+Archivo Directory.Build.targets de MSBuild                 buildtargets                     MSBuild/props
+Archivo EditorConfig                                       editorconfig                     Config
+archivo gitignore de dotnet                                gitignore                        Config
+archivo global.json                                        globaljson                       Config
+ASP.NET Core con Angular                                   angular              [C#]        Web/MVC/SPA
+ASP.NET Core con React.js                                  react                [C#]        Web/MVC/SPA
+ASP.NET Core vacío                                         web                  [C#],F#     Web/Empty
+ASP.NET Core Web API                                       webapi               [C#],F#     Web/WebAPI
+Biblioteca de clases                                       classlib             [C#],F#,VB  Common/Library
+Biblioteca de clases de Razor                              razorclasslib        [C#]        Web/Razor/Library
+Biblioteca de clases de Windows Forms                      winformslib          [C#],VB     Common/WinForms
+Biblioteca de clases de WPF                                wpflib               [C#],VB     Common/WPF
+Biblioteca de control personalizada de WPF                 wpfcustomcontrollib  [C#],VB     Common/WPF
+Biblioteca de controles de usuario de WPF                  wpfusercontrollib    [C#],VB     Common/WPF
+Biblioteca de controles de Windows Forms                   winformscontrollib   [C#],VB     Common/WinForms
+Componente Razor                                           razorcomponent       [C#]        Web/ASP.NET
+Configuración de NuGet                                     nugetconfig                      Config
+Configuración web                                          webconfig                        Config
+MSTest Test Project                                        mstest               [C#],F#,VB  Test/MSTest
+MVC de ViewStart                                           viewstart            [C#]        Web/ASP.NET
+MVC ViewImports                                            viewimports          [C#]        Web/ASP.NET
+NUnit 3 Test Item                                          nunit-test           [C#],F#,VB  Test/NUnit
+NUnit 3 Test Project                                       nunit                [C#],F#,VB  Test/NUnit
+Página de Razor                                            page                 [C#]        Web/ASP.NET
+Servicio gRPC de ASP.NET Core                              grpc                 [C#]        Web/gRPC
+Worker Service                                             worker               [C#],F#     Common/Worker/Web
+xUnit Test Project                                         xunit                [C#],F#,VB  Test/xUnit
+
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet new sln
+La plantilla "Archivo de la solución" se creó correctamente.
+
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 9CEE-9CE7
+
+ Directorio de C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01
+
+25/09/2023  10:26 a. m.    <DIR>          .
+25/09/2023  10:20 a. m.    <DIR>          ..
+25/09/2023  10:26 a. m.               441 practica01.sln
+               1 archivos            441 bytes
+               2 dirs  158.169.997.312 bytes libres
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet new webapi -o API
+La plantilla "ASP.NET Core Web API" se creó correctamente.
+
+Procesando acciones posteriores a la creación...
+Restaurando C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\API\API.csproj:
+  Determinando los proyectos que se van a restaurar...
+  Se ha restaurado C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\API\API.csproj (en 1,86 sec).
+Restauración realizada correctamente.
+
+
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 9CEE-9CE7
+
+ Directorio de C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01
+
+25/09/2023  10:27 a. m.    <DIR>          .
+25/09/2023  10:20 a. m.    <DIR>          ..
+25/09/2023  10:27 a. m.    <DIR>          API
+25/09/2023  10:26 a. m.               441 practica01.sln
+               1 archivos            441 bytes
+               3 dirs  158.122.393.600 bytes libres
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet new classlib -o Infrastructure
+La plantilla "Biblioteca de clases" se creó correctamente.
+
+Procesando acciones posteriores a la creación...
+Restaurando C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\Infrastructure\Infrastructure.csproj:
+  Determinando los proyectos que se van a restaurar...
+  Se ha restaurado C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\Infrastructure\Infrastructure.csproj (en 67 ms).
+Restauración realizada correctamente.
+
+
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet new classlib -o Core
+La plantilla "Biblioteca de clases" se creó correctamente.
+
+Procesando acciones posteriores a la creación...
+Restaurando C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\Core\Core.csproj:
+  Determinando los proyectos que se van a restaurar...
+  Se ha restaurado C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\Core\Core.csproj (en 67 ms).
+Restauración realizada correctamente.
+
+
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet sln add API
+Se ha agregado el proyecto "API\API.csproj" a la solución.
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet sln add Core
+Se ha agregado el proyecto "Core\Core.csproj" a la solución.
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet sln add Infrastructure
+Se ha agregado el proyecto "Infrastructure\Infrastructure.csproj" a la solución.
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>dotnet sln list
+Proyectos
+---------
+API\API.csproj
+Core\Core.csproj
+Infrastructure\Infrastructure.csproj
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>cd API
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\API>dotnet add reference ..\Infrastructure
+Se ha agregado la referencia "..\Infrastructure\Infrastructure.csproj" al proyecto.
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\API>dotnet add reference ..\Core
+Se ha agregado la referencia "..\Core\Core.csproj" al proyecto.
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\API>..\
+"..\" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\API>cd..
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01>cd Infrastructure
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\Infrastructure>dotnet add reference ..\Core
+Se ha agregado la referencia "..\Core\Core.csproj" al proyecto.
+
+C:\Users\APM02-041\Desktop\CAMPUS\.NetCore\practicas\practica01\Infrastructure>MD_NetCore

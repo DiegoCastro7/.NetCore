@@ -1,0 +1,16 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Instale la versión más reciente de PowerShell para obtener nuevas características y mejoras. https://aka.ms/PSWindows
+
+PS C:\Users\APM02-041> dotnet tool list --global
+Id. de paquete      Versión      Comandos
+-----------------------------------------
+PS C:\Users\APM02-041> dotnet tool install --global dotnet-ef
+Puede invocar la herramienta con el comando siguiente: dotnet-ef
+La herramienta "dotnet-ef" (versión '7.0.11') se instaló correctamente.
+PS C:\Users\APM02-041> dotnet tool list --global
+Id. de paquete      Versión      Comandos
+------------------------------------------
+dotnet-ef           7.0.11       dotnet-ef
+PS C:\Users\APM02-041>
