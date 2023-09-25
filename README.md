@@ -5,7 +5,10 @@
 - `MD_NetCore`: Megadocumento de .NetCore
 ### Practicas
 ---
-- `Practica 01`: --/--/-- Comment
+- `Practica 01`: 25/09/23 Comment
 ### Ejercicios
 ---
 - `Ejercicio 01`: --/--/-- Comment
+### Recursos
+---
+- https://www.entityframeworktutorial.net/code-first/fluent-api-in-code-first.aspx
