@@ -12,3 +12,4 @@
 ### Recursos
 ---
 - https://www.entityframeworktutorial.net/code-first/fluent-api-in-code-first.aspx
+- Snippets: Abreviaciones y comandos para escribir lineas de codigo preconfiguradas
