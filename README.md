@@ -9,6 +9,13 @@
 ### Ejercicios
 ---
 - `Ejercicio 01`: --/--/-- Comment
+### Comandos
+---
+- // Migracion de datos
+-	dotnet ef migrations add InitialCreate --project ./Infrastructure/ --startup-project ./API/ --output-dir ./Data/Migrations
+
+- // Creacion de la base de datos
+- dotnet ef database update --project ./Infrastructure/ --startup-project ./API/
 ### Recursos
 ---
 - https://www.entityframeworktutorial.net/code-first/fluent-api-in-code-first.aspx
