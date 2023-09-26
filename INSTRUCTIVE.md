@@ -13,25 +13,25 @@
         - dotnet new sln
 - `Estructura de 3 capas`: core, api, infraestructure
     + `api`:
-    + Creacion del proyecto webApi
-        - dotnet new webapi -o api
-    + Asociacion del proyecto api con la solución global
-        - dotnet sln add api
+        + Creacion del proyecto webApi
+            - dotnet new webapi -o api
+        + Asociacion del proyecto api con la solución global
+            - dotnet sln add api
     + `core`:
-    + Creacion
-        - dotnet new classlib -o core
-    + Asociacion del proyecto core con la solución global
-        - dotnet sln add core
+        + Creacion
+            - dotnet new classlib -o core
+        + Asociacion del proyecto core con la solución global
+            - dotnet sln add core
     + `infrastructure`:
-    + Creacion
-        - dotnet new classlib -o infrastructure
-    + Asociacion del proyecto infrastructure con la solución global
-        - dotnet sln add infrastructure
+        + Creacion
+            - dotnet new classlib -o infrastructure
+        + Asociacion del proyecto infrastructure con la solución global
+            - dotnet sln add infrastructure
     + `Asociacion de carpetas`:
-    + infraestructure depende de core, ingresando a la carpeta infraestructure
-        - dotnet add reference ../core
-    + api depende de infraestructure, ingresando a la carpeta api
-        - dotnet add reference ../infrastructure
+        + infraestructure depende de core, ingresando a la carpeta infraestructure
+            - dotnet add reference ../core
+        + api depende de infraestructure, ingresando a la carpeta api
+            - dotnet add reference ../infrastructure
 ### Paquetes de entity framework
 ---
 - `Desde NuGet Gallery`:
