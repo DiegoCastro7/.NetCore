@@ -5,10 +5,10 @@
 - `MD_NetCore`: Megadocumento de .NetCore
 ### Practicas
 ---
-- `Practica 01`: 25/09/23 Tienda Campus - Replica Farmacampus
+- `Practica 01`: 25/09/23 Tienda Campus - Replica Farmacampus - Acompañamiento e Instrucciones Trainer
 ### Ejercicios
 ---
-- `Ejercicio 01`: --/--/-- Comment
+- `Ejercicio 01`: 26/09/23 Tienda Campus - Replica Farmacampus - Sin Acompañamiento
 ### Comandos
 ---
 -- // Migracion de datos
