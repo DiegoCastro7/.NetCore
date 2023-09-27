@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\ejercicio01\\core\\core.csproj": {}
+    "c:\\Users\\ferch\\OneDrive\\Escritorio\\Campus\\.NetCore\\ejercicios\\ejercicio01\\core\\core.csproj": {}
   },
   "projects": {
-    "c:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\ejercicio01\\core\\core.csproj": {
+    "c:\\Users\\ferch\\OneDrive\\Escritorio\\Campus\\.NetCore\\ejercicios\\ejercicio01\\core\\core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\ejercicio01\\core\\core.csproj",
+        "projectUniqueName": "c:\\Users\\ferch\\OneDrive\\Escritorio\\Campus\\.NetCore\\ejercicios\\ejercicio01\\core\\core.csproj",
         "projectName": "core",
-        "projectPath": "c:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\ejercicio01\\core\\core.csproj",
-        "packagesPath": "C:\\Users\\APM02-041\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\ejercicio01\\core\\obj\\",
+        "projectPath": "c:\\Users\\ferch\\OneDrive\\Escritorio\\Campus\\.NetCore\\ejercicios\\ejercicio01\\core\\core.csproj",
+        "packagesPath": "C:\\Users\\ferch\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\ferch\\OneDrive\\Escritorio\\Campus\\.NetCore\\ejercicios\\ejercicio01\\core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\APM02-041\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ferch\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

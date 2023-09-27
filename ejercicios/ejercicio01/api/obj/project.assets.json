@@ -1162,19 +1162,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\APM02-041\\.nuget\\packages\\": {}
+    "C:\\Users\\ferch\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\ejercicio01\\api\\api.csproj",
+      "projectUniqueName": "c:\\Users\\ferch\\OneDrive\\Escritorio\\Campus\\.NetCore\\ejercicios\\ejercicio01\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "c:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\ejercicio01\\api\\api.csproj",
-      "packagesPath": "C:\\Users\\APM02-041\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\ejercicio01\\api\\obj\\",
+      "projectPath": "c:\\Users\\ferch\\OneDrive\\Escritorio\\Campus\\.NetCore\\ejercicios\\ejercicio01\\api\\api.csproj",
+      "packagesPath": "C:\\Users\\ferch\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\ferch\\OneDrive\\Escritorio\\Campus\\.NetCore\\ejercicios\\ejercicio01\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\APM02-041\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ferch\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1186,8 +1186,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\ejercicio01\\infrastructure\\infrastructure.csproj": {
-              "projectPath": "c:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\ejercicio01\\infrastructure\\infrastructure.csproj"
+            "c:\\Users\\ferch\\OneDrive\\Escritorio\\Campus\\.NetCore\\ejercicios\\ejercicio01\\infrastructure\\infrastructure.csproj": {
+              "projectPath": "c:\\Users\\ferch\\OneDrive\\Escritorio\\Campus\\.NetCore\\ejercicios\\ejercicio01\\infrastructure\\infrastructure.csproj"
             }
           }
         }
