@@ -9,6 +9,7 @@
 ### Ejercicios
 ---
 - `Ejercicio 01`: 26/09/23 Tienda Campus - Replica Farmacampus - Sin Acompañamiento
+    + https://github.com/trainingLeader/tiendacampus2023
 ### Comandos
 ---
 -- // Migracion de datos
