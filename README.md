@@ -17,6 +17,9 @@
 
 -- // Creacion de la base de datos
 - dotnet ef database update --project ./Infrastructure/ --startup-project ./API/
+
+-- // Montar servidor API con endpoints
+- dotnet run --project API/
 ```
 InitialCreate: Nombre de la migracion
 ./Infrastructure/: Carpeta donde esta la migracion
