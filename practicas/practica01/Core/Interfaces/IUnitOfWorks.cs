@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Core.Interfaces
-{
+namespace Core.Interfaces;
+
     public interface IUnitOfWorks
     {
         ICiudad Ciudades { get;}
@@ -12,4 +12,3 @@ namespace Core.Interfaces
         IPais Paises { get;}
         Task<int> SaveAsync();
     }
-}
