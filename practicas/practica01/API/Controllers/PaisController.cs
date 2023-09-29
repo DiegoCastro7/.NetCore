@@ -63,6 +63,14 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<Pais>> Put(int id, [FromBody] Pais pais)
         {
+            if (pais.Id == 0)
+            {
+                pais.Id = id;
+            }
+            if (pais.Id != id)
+            {
+                return BadRequest();
+            }
             if (pais == null)
             {
                 return NotFound();
@@ -70,5 +78,20 @@ namespace API.Controllers;
             _unitOfWork.Paises.Update(pais);
             await _unitOfWork.SaveAsync();
             return pais;
+        }
+
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult> Delete(int id)
+        {
+            var pais = await _unitOfWork.Paises.GetByIdAsync(id);
+            if (pais == null)
+            {
+                return NotFound();
+            }
+            _unitOfWork.Paises.Remove(pais);
+            await _unitOfWork.SaveAsync();
+            return NoContent();
         }
     }
