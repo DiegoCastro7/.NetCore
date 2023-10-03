@@ -53,7 +53,7 @@
     + Referenciar entidades: Referenciar cada una de las entidades creadas
         - public DbSet<Entidad> Entidades { get; set; }
 
------- pagina 24 md
+------- pagina 24 md
 
 
 
