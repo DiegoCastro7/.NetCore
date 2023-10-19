@@ -79,10 +79,14 @@ if "!ubicacion2!"==" " (
 
 echo "!ubicacion!"
 
-REM Crea el directorio del proyecto en la ubicación especificada
-cd "!ubicacion!"
-mkdir "!proyecto!"
-cd "!proyecto!"
+if not !eleccion! == 4 (
+    REM Crea el directorio del proyecto en la ubicación especificada
+    cd "!ubicacion!"
+    mkdir "!proyecto!"
+    cd "!proyecto!"
+)
+
+
 
 REM Continúa con la creación del proyecto
 dotnet new sln
