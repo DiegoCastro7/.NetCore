@@ -1,0 +1,33 @@
+@echo off
+setlocal enabledelayedexpansion
+
+REM Pregunta al usuario por el número de entidades
+set /p "num_entidades=Introduce el número de entidades: "
+
+REM Ciclo para crear las entidades
+set "count=0"
+:loop
+if %count% lss %num_entidades% (
+    set /p "nombre_entidad=Introduce el nombre de la entidad %count%: "
+    
+    REM Crea la entidad en Core\Entities
+    echo.>Core\Entities\!nombre_entidad!.cs
+
+    REM Crea la interfaz en Core\Interfaces
+    echo.>Core\Interfaces\I!nombre_entidad!Repository.cs
+
+    REM Crea el controlador en API\Controllers
+    echo.>API\Controllers\!nombre_entidad!Controller.cs
+
+    REM Crea el Dto en API\Dtos
+    echo.>API\Dtos\!nombre_entidad!Dto.cs
+
+    REM las configuraciones en Infrastructure\Data\Configuration
+    echo.>Infrastructure\Data\Configuration\!nombre_entidad!Configuration.cs
+
+    REM las configuraciones en Infrastructure\Repositories
+    echo.>Infrastructure\Repositories\!nombre_entidad!Repository.cs
+
+    set /a "count+=1"
+    goto :loop
+)
