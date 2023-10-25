@@ -6,10 +6,18 @@
 ### Practicas
 ---
 - `Practica 01`: 25/09/23 Tienda Campus - Replica Farmacampus - Acompañamiento e Instrucciones Trainer
+- `Practica 02`: 01/10/23 Animals App - Replica Petshop - Acompañamiento e Instrucciones Trainer
+- `Practica 03`: 19/10/23 Shop Online App - Nuevo Proyecto 4 Capas - Acompañamiento e Instrucciones Trainer
 ### Ejercicios
 ---
 - `Ejercicio 01`: 26/09/23 Tienda Campus - Replica Farmacampus - Sin Acompañamiento
     + https://github.com/trainingLeader/tiendacampus2023
+- `Ejercicio 02`: 02/10/23 Animals App - Replica Petshop - Sin Acompañamiento
+    + https://github.com/trainingLeader/animals-app.git
+- `NotiApp-Diego`: 18/10/23 Noti App - Projecto Filtro
+    + https://github.com/DiegoCastro7/NotiApp-Diego.git
+- `DiegoC-Ropa`: 20/10/23 Noti App - Examen Filtro
+    + https://github.com/DiegoCastro7/diegoc-ropa.git
 ### Comandos
 ---
 -- // Migracion de datos
