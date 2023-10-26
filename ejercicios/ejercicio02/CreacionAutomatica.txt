@@ -6,10 +6,9 @@ set /p "num_entidades=Introduce el número de entidades: "
 
 REM Ciclo para crear las entidades
 set "count=0"
-set /a "count2=count + 1"
 :loop
 if %count% lss %num_entidades% (
-    set /p "nombre_entidad=Introduce el nombre de la entidad %count2%: "
+    set /p "nombre_entidad=Introduce el nombre de la entidad %count%: "
     
     REM Crea la entidad en Core\Entities
     echo.>Core\Entities\!nombre_entidad!.cs
