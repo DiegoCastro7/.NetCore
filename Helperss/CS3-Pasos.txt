@@ -1,0 +1,40 @@
+Snippet: cs3-Pasos
+
+Pasos Proyecto 3 Capas:
+
+1. Crear la conexion a la base de datos
+2. Crear la clase de contexto
+3. Inyectar la conexion a la base de datos en el contenedor de dependencias antes de var app = builder.Build();
+4. Implementar Entities, Interfaces, Controllers, Dtos, Configuration y Repositories
+5. Entidades:
+	Poner todo lo que requiere la entidad
+***********************************Conexxiones agregar explicacion video 4
+6. Configuraciones:
+	Poner todas las propiedades que estan en la entidad + las de base entity
+***********************************Conexiones agregar explicacion video 5 editar snippet si es requerido en one one cs3-Configuration+
+7. Dtos: Video 6
+
+
+
+Tener en cuenta:
+
+Archivos que deben estar creados:
+BaseEntity
+
+Estructura: + Proyectos - Carpetas * Archivos
+
++ API
+	- Controllers
+	- Extensions
+	- Profiles
+	- Dtos
++ Core
+	- Entities: Contiene las entidades "Tablas" que usaremos
+		* BaseEntity: Entidad Base, contiene atributos que se repiten en varias clases
+	- Interfaces
++ Infrastructure
+	- Repositories
+	- UnitOfWork
+	- Data
+		* Contexto: Hace las negociaciones entre la WebApi y la base de datos
+		- Configuration: Define como se mapean las entidades

@@ -30,5 +30,6 @@ if %count% lss %num_entidades% (
     echo.>Infrastructure\Repositories\!nombre_entidad!Repository.cs
 
     set /a "count+=1"
+    set /a "count2+=1"
     goto :loop
 )
