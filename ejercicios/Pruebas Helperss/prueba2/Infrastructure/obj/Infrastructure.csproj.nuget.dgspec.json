@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Core\\Core.csproj": {
+    "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\ferch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Core\\obj\\",
+        "projectPath": "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\APM02-041\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ferch\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APM02-041\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -57,17 +57,17 @@
         }
       }
     },
-    "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ferch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\APM02-041\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ferch\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APM02-041\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -79,8 +79,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Core\\Core.csproj"
+              "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Core\\Core.csproj"
               }
             }
           }

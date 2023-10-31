@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ferch\\.nuget\\packages\\": {}
+    "C:\\Users\\APM02-041\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\ferch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferch\\OneDrive\\Escritorio\\prueba\\Core\\obj\\",
+      "projectPath": "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\APM02-041\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\APM02-041\\Desktop\\CAMPUS\\.NetCore\\ejercicios\\Pruebas Helperss\\prueba2\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ferch\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\APM02-041\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
