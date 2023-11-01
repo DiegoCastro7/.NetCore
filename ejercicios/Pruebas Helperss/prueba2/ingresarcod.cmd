@@ -1,11 +1,11 @@
 setlocal enabledelayedexpansion
 
 :Menu
-cls
+
 echo Seleccione una opción:
 echo 1. Context
-echo 2. Repository
-echo 3. Unit of Work
+echo 2. IUnitOfWork
+echo 3. MappingProfiles
 echo 4. DTOs
 echo 5. Extension
 echo 6. Helpers
@@ -13,7 +13,7 @@ echo 7. Services
 echo 8. Salir
 set /p "opcioncod=Ingrese el número de opción deseada: "
 echo !opcioncod!
-cls
+
 
 if %opcioncod%==1 (
     echo Ha seleccionado Context.
@@ -58,4 +58,69 @@ if %opcioncod%==1 (
         echo }>> !ubicacionguardada!Infrastructure\Data\!proyecto!Context.cs
 
     goto :Menu
+) else if %opcioncod%==2 (
+    echo Ha seleccionado IUnitOfWork.
+    
+        REM Genera el contenido del archivo C#
+
+        echo using System;> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+        echo using System.Collections.Generic;>> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+        echo using System.Linq;>> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+        echo using System.Threading.Tasks;>> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+        echo.>> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+        echo namespace Core.Interfaces;>> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+        echo public interface IUnitOfWork >> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+        echo {>> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+        echo.>> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+
+        REM Itera a través de los archivos en el directorio
+
+        for %%f in ("%~dp0Core\Entities\*") do (
+            set "nombre=%%~nf"
+            if not "!nombre!"=="BaseEntity" (
+                echo     I!nombre!Repository ^!nombre^!s ^{ get; ^}>> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+            )
+        )
+
+        REM Generar el contenido faltante del codigo
+
+        echo.>> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+        echo     Task^<int^> SaveAsync^(^);>> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+        echo }>> !ubicacionguardada!Core\Interfaces\IUnitOfWork.cs
+
+    goto :Menu
+) else if %opcioncod%==3 (
+
+REM Agrega las directivas using al archivo
+echo using System;> API\Profiles\MappingProfiles.cs
+echo using System.Collections.Generic;>> API\Profiles\MappingProfiles.cs
+echo using System.Linq;>> API\Profiles\MappingProfiles.cs
+echo using System.Threading.Tasks;>> API\Profiles\MappingProfiles.cs
+echo using API.Dtos;>> API\Profiles\MappingProfiles.cs
+echo using AutoMapper;>> API\Profiles\MappingProfiles.cs
+echo using Core.Entities;>> API\Profiles\MappingProfiles.cs
+echo.>> API\Profiles\MappingProfiles.cs
+echo namespace API.Profiles>> API\Profiles\MappingProfiles.cs
+echo {>> API\Profiles\MappingProfiles.cs
+echo     public class MappingProfiles : Profile {>> API\Profiles\MappingProfiles.cs
+echo         public MappingProfiles^(^) ^{>> API\Profiles\MappingProfiles.cs
+echo.>> API\Profiles\MappingProfiles.cs
+
+REM Itera a través de los archivos en el directorio
+
+for %%f in ("%~dp0Core\Entities\*") do (
+    set "nombre=%%~nf"
+    if not "!nombre!"=="BaseEntity" (
+        echo             CreateMap^<!nombre!, ^!nombre^!Dto^>^(^).ReverseMap^(^);>> API\Profiles\MappingProfiles.cs
+    )
+)
+
+REM Generar el contenido faltante del codigo
+
+echo.>> API\Profiles\MappingProfiles.cs
+echo         }>> API\Profiles\MappingProfiles.cs
+echo     }>> API\Profiles\MappingProfiles.cs
+echo }>> API\Profiles\MappingProfiles.cs
+
+goto :Menu
 )
