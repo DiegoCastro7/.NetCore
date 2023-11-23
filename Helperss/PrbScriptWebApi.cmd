@@ -13,7 +13,9 @@ echo Menu Principal
 echo 1. Creacion de Proyecto
 echo 2. Creacion de Entidades
 echo 3. Insertar Codigo
-echo 4. Salir
+echo 4. Exportar DB "CodeFirst"
+echo 5. Importar DB "DBFirst"
+echo 6. Salir
 set /p "opcion_menu=Seleccione una opcion: "
 
 if "%opcion_menu%"=="1" (
@@ -23,11 +25,45 @@ if "%opcion_menu%"=="1" (
 ) else if "%opcion_menu%"=="3" (
     call :menu_seleccion_insertar_codigo
 ) else if "%opcion_menu%"=="4" (
+    call :CodeFirst
+) else if "%opcion_menu%"=="5" (
+    call :DBFirst
+) else if "%opcion_menu%"=="6" (
     goto :eof
 ) else (
     echo Opcion no valida. Intente de nuevo.
     goto :menu_principal
 )
+
+::----------------------------------------------------------------------------------------------------
+
+:CodeFirst
+cls
+echo Menu CodeFirst
+echo 1. Creacion de Migracion
+echo 2. Creacion de Entidades
+echo 3. Salir
+set /p "opcion_menu=Seleccione una opcion: "
+
+if "%opcion_menu%"=="1" (
+    set /p "name_migracion=Escriba el nombre para la migracion: "
+    dotnet ef migrations add !name_migracion! --project ./Persistence/ --startup-project ./API/ --output-dir ./Data/Migrations
+) else if "%opcion_menu%"=="2" (
+    dotnet ef database update --project ./Persistence/ --startup-project ./API/
+) else if "%opcion_menu%"=="3" (
+    goto :menu_principal
+) else (
+    echo Opcion no valida. Intente de nuevo.
+    goto :CodeFirst
+)
+
+::----------------------------------------------------------------------------------------------------
+
+:DBFirst
+cls
+set /p "Database=Ingrese el nombre de la base de datos: "
+dotnet ef dbcontext scaffold "server=localhost;user=root;password=123456;database=!Database!" Pomelo.EntityFrameWorkCore.MySql -s .\API\ -p .\Persistence\ --context ProyectoDotnetContext --context-dir Data --output-dir Entities
+goto :menu_principal
 
 ::----------------------------------------------------------------------------------------------------
 setlocal enabledelayedexpansion
@@ -172,7 +208,6 @@ goto :menu_insertar_codigo_tres_capas2
 cls
 echo Tenga en cuenta que debe tener la entidades ya creadas
 pause
-:menu_insertar_codigo_cuatro_capas2
 cls
 echo Automatizacion de codigo:
 echo Seleccione una opcion:
@@ -213,7 +248,7 @@ if %opcioncod%==1 (
     echo Opcion no valida. Por favor, seleccione una opcion del menu.
     pause
 )
-goto :menu_insertar_codigo_cuatro_capas2
+goto :menu_insertar_codigo_cuatro_capas
 
 ::--------------------------------------------------------------------------------------------------------
 
@@ -368,6 +403,7 @@ cd Application
 del Class1.cs
 mkdir Repository
 cd Repository
+:: Generacion GenericRepository
     echo using System;>"!ubicacionguardada!Application\Repository\GenericRepository.cs"
     echo using System.Collections.Generic;>>"!ubicacionguardada!Application\Repository\GenericRepository.cs"
     echo using System.Linq;>>"!ubicacionguardada!Application\Repository\GenericRepository.cs"
