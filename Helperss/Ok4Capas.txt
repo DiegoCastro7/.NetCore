@@ -1,3 +1,37 @@
 BaseEntity ok
+Entities ok
+
 IGeneric ok
-GenericRepository falt
+IUnit of work ok
+Interfaces ok
+
+GenericRepository ok
+Repositorys ok
+UnitOfWork ok
+
+Context ok
+Configuration ok
+
+Mapping Profiles ok
+Controllers ok
+Dtos ok
+AplicationServices Sin JWT ok
+----------------------------------------------------
+Falta editar el program ------------ Snippet
+Estudiar incorporacion consultas
+
+
+Solucionar pausa insertar codigo
+codigos db first y code first
+-----------------------------------------------------
+
+Revisar:
+Baseentitystring
+GenericRepositorystrinf
+Igenericstring
+
+Necesario para despues:
+
+Falta Refresh Token
+Falta Helperss
+Falta Services
